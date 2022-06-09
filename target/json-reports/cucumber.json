@@ -1,0 +1,340 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-08T19:16:17.181Z",
+        "line": 8,
+        "name": "TC09 yanlis password ile giris yapilamaz",
+        "description": "",
+        "id": "us1006-yanlis-biligilerle-siteye-giris-yapilamaz;tc09-yanlis-password-ile-giris-yapilamaz",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14008457900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "kullanici \"HMCUrl\" anasayfasinda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HMCUrl\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.kullaniciAnasayfasinda(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1398133400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Log in yazisina tiklar",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.log_in_yazisina_tiklar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 431733100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "gecerli username girer",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.gecerli_username_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 461713800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "gecersiz password girer",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.gecersizPasswordGirer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1788321000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Login butonuna basar",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.login_butonuna_basar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88942000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "sayfaya giris yapamadigini kontrol eder",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.sayfayaGirisYapamadiginiKontrolEder()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 898949700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "sayfayi kapatir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.sayfayi_kapatir()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@hotelNegativeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-08T19:16:36.656Z",
+        "line": 17,
+        "name": "TC10 yanlis kullanici adi ile giris yapilamaz",
+        "description": "",
+        "id": "us1006-yanlis-biligilerle-siteye-giris-yapilamaz;tc10-yanlis-kullanici-adi-ile-giris-yapilamaz",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6446171200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "kullanici \"HMCUrl\" anasayfasinda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HMCUrl\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.kullaniciAnasayfasinda(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 944191000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Log in yazisina tiklar",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.log_in_yazisina_tiklar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 190070500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "gecersiz username girer",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.gecersizUsernameGirer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106519800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "gecerli password girer",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.gecerli_password_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127488200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Login butonuna basar",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.login_butonuna_basar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74948700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "sayfaya giris yapamadigini kontrol eder",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.sayfayaGirisYapamadiginiKontrolEder()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 292818300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "sayfayi kapatir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.sayfayi_kapatir()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@hotelNegativeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-08T19:16:44.887Z",
+        "line": 26,
+        "name": "TC11 yanlis kullanici adi ve sifre ile giris yapilamaz",
+        "description": "",
+        "id": "us1006-yanlis-biligilerle-siteye-giris-yapilamaz;tc11-yanlis-kullanici-adi-ve-sifre-ile-giris-yapilamaz",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8931668700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "kullanici \"HMCUrl\" anasayfasinda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HMCUrl\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.kullaniciAnasayfasinda(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1076471800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Log in yazisina tiklar",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.log_in_yazisina_tiklar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 246847200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "gecersiz username girer",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.gecersizUsernameGirer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96939600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "gecersiz password girer",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.gecersizPasswordGirer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121928800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Login butonuna basar",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.login_butonuna_basar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41663400,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "sayfaya giris yapamadigini kontrol eder",
+            "match": {
+              "location": "stepDefinitions.HMCStepDefinition.sayfayaGirisYapamadiginiKontrolEder()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 234951100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "sayfayi kapatir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.sayfayi_kapatir()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@hotelNegativeTest"
+          }
+        ]
+      }
+    ],
+    "name": "US1006 yanlis biligilerle siteye giris yapilamaz",
+    "description": "",
+    "id": "us1006-yanlis-biligilerle-siteye-giris-yapilamaz",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US1006_hotelMyCampNegativeLogin.feature",
+    "tags": [
+      {
+        "name": "@hotelNegativeTest",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
