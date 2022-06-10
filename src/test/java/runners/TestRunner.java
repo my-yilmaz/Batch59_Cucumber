@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         tags = ("@hotelNegativeTest"),
         dryRun = false
 )
-public class Runner {
+public class TestRunner {
     // Bir framwork'de bir tek Runner Class'i yeterli olabilir
     // Runner class'inda class body sinde hicbir sey olmaz
     // Runner class imizi onemli yapan 2 adet annotaion vardir

@@ -2,60 +2,60 @@ package stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
-import pages.HotelmycampPage;
+import pages.HMCPage;
 import utilities.ConfigReader;
 
-public class HMCStepDefinition {
-    HotelmycampPage hmc = new HotelmycampPage();
-
+public class HMCStepDefinitions {
+    HMCPage hmcPage=new HMCPage();
     @Then("Log in yazisina tiklar")
     public void log_in_yazisina_tiklar() {
-        hmc.logIn.click();
+        hmcPage.loginButonu.click();
     }
-
     @Then("gecerli username girer")
     public void gecerli_username_girer() {
-        hmc.username.sendKeys(ConfigReader.getProperty("HMCValidUsername"));
+        hmcPage.usernameKutusu.sendKeys(ConfigReader.getProperty("HMCValidUsername"));
     }
-
     @Then("gecerli password girer")
     public void gecerli_password_girer() {
-        hmc.password.sendKeys(ConfigReader.getProperty("HMCValidPassword"));
+        hmcPage.passwordKutusu.sendKeys(ConfigReader.getProperty("HMCValidPassword"));
     }
-
     @Then("Login butonuna basar")
     public void login_butonuna_basar() {
-        hmc.submitButonu.click();
+        hmcPage.loginButonu2.click();
     }
-
     @Then("sayfaya giris yaptigini kontrol eder")
     public void sayfaya_giris_yaptigini_kontrol_eder() {
-        Assert.assertTrue(hmc.kullaniciProfilIsmi.isDisplayed());
+        Assert.assertTrue(hmcPage.hotelManagement.isDisplayed());
     }
 
     @And("gecersiz password girer")
     public void gecersizPasswordGirer() {
-        hmc.password.sendKeys(ConfigReader.getProperty("HMCWrongPassword"));
+        hmcPage.passwordKutusu.sendKeys(ConfigReader.getProperty("HMCWrongPassword"));
     }
 
-    @Then("sayfaya giris yapamadigini kontrol eder")
-    public void sayfayaGirisYapamadiginiKontrolEder() {
-        Assert.assertTrue(hmc.submitButonu.isDisplayed());
+    @Then("sayfaya giris yapilamadigini test eder")
+    public void sayfayaGirisYapilamadiginiTestEder() {
+        Assert.assertTrue(hmcPage.loginButonu2.isDisplayed());
     }
 
     @And("gecersiz username girer")
     public void gecersizUsernameGirer() {
-        hmc.password.sendKeys(ConfigReader.getProperty("HMCWrongUsername"));
+        hmcPage.usernameKutusu.sendKeys(ConfigReader.getProperty("HMCWrongUsername"));
     }
+
 
     @And("gecersiz username olarak {string} girer")
     public void gecersizUsernameOlarakGirer(String username) {
-        hmc.username.sendKeys(username);
+
+        hmcPage.usernameKutusu.sendKeys(username);
     }
 
     @And("gecersiz password olarak {string} girer")
     public void gecersizPasswordOlarakGirer(String password) {
-    hmc.password.sendKeys(password);
+        hmcPage.passwordKutusu.sendKeys(password);
     }
+
+
 }
